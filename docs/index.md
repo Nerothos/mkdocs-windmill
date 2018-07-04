@@ -33,7 +33,13 @@ theme: 'windmill'
 If you cloned Windmill from GitHub:
 
 ``` yaml
-theme_dir: 'mkdocs-windmill/mkdocs_windmill'
+theme:
+  name: null
+  custom_dir: '{INSTALL_DIR}/mkdocs_windmill'
+  # Copy settings from mkdocs_theme.yml, which is ignored by custom_dir themes.
+  static_templates: [404.html]
+  search_index_only: true
+  include_search_page: true
 ```
 
 See [Customization](customization.md) for a few extra configuration options

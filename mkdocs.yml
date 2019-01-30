@@ -12,15 +12,15 @@ theme:
   search_index_only: true
   include_search_page: true
 
+# This should be renamed to nav for mkdocs 1.0+
 pages:
-- Windmill Theme:
-  - Usage: index.md
-  - Customization: customization.md
+- Usage: index.md
+- Customization: customization.md
 - Samples:
   - Sample Page A: sample-a.md
   - Sample Subfolder:
-    - Sample Subpage A1: sample-a1.md
-    - Sample Subpage A2: sample-a2.md
+    - Sample Subpage A1: a/sample-a1.md
+    - Sample Subpage A2: a/sample-a2.md
   - Sample Page B: sample-b.md
 
 markdown_extensions:
@@ -29,4 +29,4 @@ markdown_extensions:
 
 extra:
   history_buttons: false
-  version: 0.1.5
+  version: 0.1.8

@@ -42,5 +42,11 @@ theme:
   include_search_page: true
 ```
 
+Note that it's important for there to exist a homepage, e.g. a top-level root element in mkdocs 1.0+:
+``` yaml
+nav:
+  - Home: index.md
+```
+
 See [Customization](customization.md) for a few extra configuration options
 supported by the Windmill theme.
